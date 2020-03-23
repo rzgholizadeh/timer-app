@@ -10,11 +10,11 @@ class Timer {
 
 	start = () => {
 		this.tick();
-		this.timerId = setInterval(this.tick, 1000);
+		this.intervalId = setInterval(this.tick, 1000);
 	};
 
 	pause = () => {
-		clearInterval(this.timerId);
+		clearInterval(this.intervalId);
 	};
 
 	tick = () => {
